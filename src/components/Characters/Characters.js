@@ -1,6 +1,6 @@
 import {getDataApi} from "../../utils/getDataApi";
 
-import './Characters.css';
+import "./Characters.css";
 import {IMG_STANDART_XLARGE} from "../../constants/api";
 import {ROOT_MODAL} from "../../constants/root";
 
@@ -11,7 +11,7 @@ import {ROOT_MODAL} from "../../constants/root";
 class Characters {
 
     renderContent(data) {
-        let htmlContent = '';
+        let htmlContent = "";
         data.forEach(({name, thumbnail: {path, extension}}) => {
 
             const imgSrc = `${path}/${IMG_STANDART_XLARGE}.${extension}`;
@@ -41,7 +41,7 @@ class Characters {
     }
 
     renderNotification() {
-        console.log('Нет данных')
+        console.log("Нет данных");
 
     }
 

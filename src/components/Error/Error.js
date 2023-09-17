@@ -1,6 +1,6 @@
 import { ROOT_INDEX } from "../../constants/root";
 
-import './Error.css';
+import "./Error.css";
 
 class Error {
     render() {

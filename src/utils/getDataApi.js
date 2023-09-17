@@ -15,7 +15,7 @@ class GetDataApi {
 
         } catch (error) {
             console.log(error.message);
-            return false
+            return false;
         }
     }
 }

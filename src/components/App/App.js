@@ -2,11 +2,11 @@ import Comics from "../Comics/Comics.js";
 
 
 
-import './App.css'
+import "./App.css";
 
 class App {
-   async render() {
-    await Comics.render();
+    async render() {
+        await Comics.render();
     }
 }
 
