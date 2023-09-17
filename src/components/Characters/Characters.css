@@ -49,3 +49,11 @@
     text-overflow: ellipsis;
     text-align: center;
 }
+
+.characters__close {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: var(--spacing-large);
+    right: var(--spacing-large);
+}

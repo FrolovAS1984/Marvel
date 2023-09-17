@@ -56,7 +56,11 @@ module.exports = {
             {
                 test: /\.pug$/,
                 loader: 'pug-loader',
-            }
+            },
+            {
+                test: /\.svg$/,
+                use: ['svg-inline-loader']
+            },
         ]
     },
 }

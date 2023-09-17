@@ -1,10 +1,12 @@
 import {getDataApi} from "../../utils/getDataApi";
 
-import "./Characters.css";
+
 import {IMG_STANDART_XLARGE} from "../../constants/api";
 import {ROOT_MODAL} from "../../constants/root";
 
+import "./Characters.css";
 
+import imgCloseWhite from "./img/close-white.svg";
 
 
 
@@ -29,8 +31,8 @@ class Characters {
                 <ul class="characters__container">
                     ${htmlContent}
                 </ul>
-                <button class="characters__close" onclick="modal.innerHTML = ''">
-                    Закрыть
+                <button class="btn characters__close" onclick="modal.innerHTML = ''" style="background-image:url(${imgCloseWhite})">
+
                 </button>
             </div>
         `;
