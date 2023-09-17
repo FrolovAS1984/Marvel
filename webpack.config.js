@@ -3,6 +3,8 @@ const TerserWebpackPlugin = require('terser-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('css-minimizer-webpack-plugin');
 const ESLintPlugin= require('eslint-webpack-plugin');
 const StylelintPlugin = require('stylelint-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const {options} = require("axios");
 
 module.exports = {
     entry: './src/index.js',
@@ -10,11 +12,24 @@ module.exports = {
     output: {
         filename: 'main.js'
     },
+    devtool: 'inline-source-map',
+    devServer: {
+        historyApiFallback: true,
+        static: "./dist",
+        port: 9000,
+        open: true,
+        hot: true
+    },
     plugins: [
         new MiniCSSExtractPlugin(),
         new TerserWebpackPlugin(),
         new OptimizeCSSAssetsPlugin(),
         new ESLintPlugin(),
+        new HtmlWebpackPlugin({
+            template: './public/index.pug',
+            filename: "index.html"
+
+        }),
         // new StylelintPlugin(),
     ],
     optimization: {
@@ -36,6 +51,11 @@ module.exports = {
                     },
                     'css-loader',
                 ],
+
+            },
+            {
+                test: /\.pug$/,
+                loader: 'pug-loader',
             }
         ]
     },

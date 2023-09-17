@@ -42,8 +42,6 @@ class Comics {
         } else {
             Error.render();
         }
-
-
     }
     eventListener() {
         document.querySelectorAll(".comics__item").forEach(element => {
