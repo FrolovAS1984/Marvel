@@ -1,0 +1,19 @@
+{
+  "comics": [
+    {"id": 82967, "digitalId": 0, "title": "Marvel Previews (2017)", "issueNumber": 0},
+    {"id": 82965, "digitalId": 0, "title": "Marvel Previews (2017)", "issueNumber": 0},
+    {"id": 82970, "digitalId": 52952, "title": "Marvel Previews (2017)", "issueNumber": 0},
+    {"id": 37505, "digitalId": 0, "title": "Marvels Vol. 1 (1994) #9", "issueNumber": 9},
+    {"id": 37504, "digitalId": 0, "title": "Marvels Vol. 1 (1994) #7", "issueNumber": 7},
+    {"id": 1220, "digitalId": 0, "title": "Amazing Spider-Man 500 Covers Slipcase - Book II (Trade Paperback)", "issueNumber": 0},
+    {"id": 6181, "digitalId": 0, "title": "Ultimate Spider-Man Ultimate Collection Book 1 (Trade Paperback)", "issueNumber": 0},
+    {"id": 37534, "digitalId": 0, "title": "Magician: Apprentice Riftwar Saga (2010) #17", "issueNumber": 17},
+    {"id": 37499, "digitalId": 0, "title": "Marvels Vol. 1 (1994) #3", "issueNumber": 3}
+  ],
+  "characters": [
+    {"id": 10092, "name": "Spider-Man"},
+    {"id": 10093, "name": "Spider-Man2"}
+  ]
+    }
+
+
